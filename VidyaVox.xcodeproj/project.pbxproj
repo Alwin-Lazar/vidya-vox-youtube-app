@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		11F5059C1E2B4AD000039AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5059B1E2B4AD000039AD9 /* AppDelegate.swift */; };
-		11F5059E1E2B4AD200039AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5059D1E2B4AD200039AD9 /* ViewController.swift */; };
+		11F5059E1E2B4AD200039AD9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5059D1E2B4AD200039AD9 /* HomeVC.swift */; };
 		11F505A11E2B4AD800039AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F5059F1E2B4AD800039AD9 /* Main.storyboard */; };
 		11F505A31E2B4ADC00039AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F505A21E2B4ADC00039AD9 /* Assets.xcassets */; };
 		11F505A61E2B4ADC00039AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F505A41E2B4ADC00039AD9 /* LaunchScreen.storyboard */; };
+		11F505B11E2B658100039AD9 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F505B01E2B658100039AD9 /* VideoVC.swift */; };
+		11F505B31E2B6A1E00039AD9 /* VidyaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F505B21E2B6A1E00039AD9 /* VidyaCell.swift */; };
+		11F505B51E2B6BFA00039AD9 /* VidyaVox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F505B41E2B6BFA00039AD9 /* VidyaVox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11F505981E2B4ACD00039AD9 /* VidyaVox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidyaVox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F5059B1E2B4AD000039AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11F5059D1E2B4AD200039AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11F5059D1E2B4AD200039AD9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		11F505A01E2B4AD800039AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11F505A21E2B4ADC00039AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F505A51E2B4ADC00039AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F505A71E2B4ADD00039AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F505B01E2B658100039AD9 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		11F505B21E2B6A1E00039AD9 /* VidyaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidyaCell.swift; sourceTree = "<group>"; };
+		11F505B41E2B6BFA00039AD9 /* VidyaVox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VidyaVox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		11F5059A1E2B4ACD00039AD9 /* VidyaVox */ = {
 			isa = PBXGroup;
 			children = (
+				11F505AF1E2B577300039AD9 /* View */,
+				11F505AE1E2B576B00039AD9 /* Model */,
+				11F505AD1E2B576200039AD9 /* Controller */,
 				11F5059B1E2B4AD000039AD9 /* AppDelegate.swift */,
-				11F5059D1E2B4AD200039AD9 /* ViewController.swift */,
 				11F5059F1E2B4AD800039AD9 /* Main.storyboard */,
 				11F505A21E2B4ADC00039AD9 /* Assets.xcassets */,
 				11F505A41E2B4ADC00039AD9 /* LaunchScreen.storyboard */,
 				11F505A71E2B4ADD00039AD9 /* Info.plist */,
 			);
 			path = VidyaVox;
+			sourceTree = "<group>";
+		};
+		11F505AD1E2B576200039AD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F5059D1E2B4AD200039AD9 /* HomeVC.swift */,
+				11F505B01E2B658100039AD9 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11F505AE1E2B576B00039AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11F505B41E2B6BFA00039AD9 /* VidyaVox.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		11F505AF1E2B577300039AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F505B21E2B6A1E00039AD9 /* VidyaCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F5059E1E2B4AD200039AD9 /* ViewController.swift in Sources */,
+				11F505B11E2B658100039AD9 /* VideoVC.swift in Sources */,
+				11F5059E1E2B4AD200039AD9 /* HomeVC.swift in Sources */,
 				11F5059C1E2B4AD000039AD9 /* AppDelegate.swift in Sources */,
+				11F505B51E2B6BFA00039AD9 /* VidyaVox.swift in Sources */,
+				11F505B31E2B6A1E00039AD9 /* VidyaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
